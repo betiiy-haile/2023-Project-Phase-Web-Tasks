@@ -28,7 +28,13 @@ body {
 
 .main-form {
   margin: 2rem;
-  width: 50%;
+  width: 45%;
+  display: flex;
+  gap: 1rem;
+}
+
+.edit-form {
+  width: 100%;
   display: flex;
   gap: 1rem;
 }
@@ -41,10 +47,58 @@ body {
   width: 90%;
 }
 
-.main-form button{
+.main-form button,
+.edit-form button {
   padding: .8rem;
   border-radius: 10px;
   background-color: #b0d7ff;
   font-size: 1.5rem;
   font-weight: bolder;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+.todo-item {
+  padding: 1.2rem 2rem;
+  border-radius: 10px;
+  background-color: #d8d5db;
+  color: #2d3142;
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo-item .todo-text,
+.todo-item .todo-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.todo-item input[type="checkbox"] {
+  height: 1.3rem;
+  width: 1.3rem;
+  border: 2px solid green;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.todo-icons .edit-icon {
+  background-color: rgb(243, 171, 36);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.todo-icons .delete-icon {
+  background-color: rgb(245, 45, 45);
+  padding: 0.5rem;
+  border-radius: 5px;
 }
